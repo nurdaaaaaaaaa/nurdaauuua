@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(61, 61, 154);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .app-container {
+      background-color: rgb(224, 223, 223);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .app-grid div {
+      padding: 10px;
+      background-color: #2bb45f;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+    }
+
+    .app-grid div img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .add-app-btn {
+      background-color: #4e80f7;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .add-app-btn:hover {
+      background-color: #3d6adf;
+    }
+  </style>
+  <title>App Grid</title>
+</head>
+<body>
+  <div class="app-container">
+    <h3>Apps</h3>
+    <div class="app-grid">
+      <div><img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack"></div>
+      <div><img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Trello_logo.svg" alt="Trello"></div>
+      <div><img src="https://olegburko.ru/wp-content/uploads/2016/07/RealTimeBoard_Logo.png" alt="RealtimeBoard"></div>
+      <div><img src="https://w7.pngwing.com/pngs/992/738/png-transparent-jira-hd-logo-thumbnail.png" alt="Jira"></div>
+      <div><img src="https://cdn.worldvectorlogo.com/logos/dropbox-1.svg" alt="Dropbox"></div>
+      <div><button class="add-app-btn">+ ADD</button></div>
+    </div>
+    <button class="add-app-btn">ADD MORE APPS</button>
+  </div>
+</body>
+</html>
